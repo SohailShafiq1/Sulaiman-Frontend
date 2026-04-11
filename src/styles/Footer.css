@@ -1,0 +1,33 @@
+.main-footer {
+  background-color: #004a99;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  border-top: 3px solid #d4af37;
+  margin-top: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #25d366; /* WhatsApp green on hover */
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .footer-link {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,271 @@
+.league-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.league-content {
+  padding: 20px;
+}
+
+.league-tournament-section {
+  background: white;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.league-section-banner {
+  background-color: #065e34; /* Dark green matching screenshot */
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  direction: rtl;
+  letter-spacing: 1px;
+}
+
+.league-tournament-body {
+  display: flex;
+  padding: 25px;
+}
+
+.league-tournament-right {
+  flex: 1;
+  min-width: 0; /* Prevents flex items from overflowing */
+}
+
+.league-tournament-info {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.tournament-header-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.league-copy-btn {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.league-copy-btn:hover {
+  background: #e2e8f0;
+  color: #2b6cb0;
+}
+
+.league-copy-btn.copied {
+  background: #065e34;
+  color: white;
+  border-color: #065e34;
+}
+
+.tournament-name-blue {
+  color: #2b6cb0;
+  margin: 0 0 8px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.tournament-dates-mini {
+  color: #2d3748;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.league-table-container {
+  width: 100%;
+  overflow: hidden; /* No scroll bar */
+}
+
+.league-standing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.league-standing-table th {
+  background-color: #f3cf66;
+  color: #ffffff;
+  padding: 12px 5px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 0.9rem;
+  border-bottom: 2px solid #edf2f7;
+}
+
+.league-standing-table td {
+  padding: 10px 5px;
+  vertical-align: middle;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.name-cell-header {
+  text-align: right !important;
+}
+
+.total-cell-header {
+  text-align: center !important;
+}
+
+.pos-cell {
+  width: 35px;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+/* Winning Total Blink Effect: 2s Blue, 2s White */
+@keyframes blink-winner {
+  0%, 50% { background-color: #17a2b8; color: white; }
+  51%, 100% { background-color: transparent; color: inherit; }
+}
+
+.winning-total-blink {
+  font-weight: 800 !important;
+  animation: blink-winner 4s infinite;
+}
+
+.photo-cell {
+  width: 45px;
+}
+
+.photo-cell img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #718096;
+  object-fit: cover;
+}
+
+.name-cell-urdu {
+  direction: rtl;
+  text-align: right !important;
+  font-weight: 500;
+  color: #2d3748;
+  white-space: normal;
+  padding-right: 15px !important;
+}
+
+.city-cell {
+  width: 60px;
+  color: #2d3748;
+  font-weight: 500;
+}
+
+.total-cell-bold {
+  font-weight: 800;
+  color: #1a202c;
+  width: 80px;
+  text-align: center !important;
+}
+
+.prize-cell {
+  width: 40px;
+}
+
+.city-cell {
+  color: #2d3748;
+  font-weight: 500;
+}
+
+.total-cell-bold {
+  font-weight: 800;
+  color: #1a202c;
+  font-size: 1.05rem;
+}
+
+.prize-cell {
+  width: 100px;
+}
+
+.announcement {
+  background-color: white;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2d3748;
+  border-bottom: 1px solid #e2e8f0;
+  direction: rtl;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.announcement marquee {
+  display: block;
+  width: 100%;
+}
+
+/* Zebra striping - light grey to match screenshot exactly */
+.league-standing-table tbody tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .league-tournament-body {
+    padding: 15px;
+  }
+
+  .league-section-banner {
+    font-size: 1.2rem;
+    padding: 10px 5px; /* Reduced padding */
+  }
+
+  .tournament-name-blue {
+    font-size: 1.2rem;
+  }
+
+  .tournament-dates-mini {
+    font-size: 0.9rem;
+  }
+
+  .league-standing-table th, 
+  .league-standing-table td {
+    padding: 8px 3px;
+    font-size: 0.75rem;
+  }
+
+  .pos-cell { width: 30px; }
+  .photo-cell { width: 40px; }
+  .photo-cell img { width: 32px; height: 32px; }
+  .city-cell { width: 50px; }
+  .total-cell-bold { width: 70px; font-size: 0.8rem; }
+  .prize-cell { display: none; } /* Hide Prize on mobile to save space */
+  
+  .announcement {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .league-content {
+    padding: 10px;
+  }
+  
+  .league-tournament-body {
+    padding: 10px;
+  }
+}

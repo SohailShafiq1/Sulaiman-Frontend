@@ -1,0 +1,236 @@
+.manage-admins {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.manage-admins h3 {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-bottom: 2px solid #c9a44c;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.admin-form-card, .admin-list-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin-bottom: 2.5rem;
+}
+
+.admin-form-card h4, .admin-list-card h4 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #555;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus, .form-group select:focus {
+  outline: none;
+  border-color: #c9a44c;
+  box-shadow: 0 0 0 3px rgba(201, 164, 76, 0.1);
+}
+
+.success-msg { 
+  background-color: #d4edda;
+  color: #155724;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.error-msg { 
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+button[type="submit"] {
+  background-color: #c9a44c;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button[type="submit"]:hover {
+  background-color: #b08d3b;
+}
+
+button[type="submit"]:active {
+  transform: translateY(1px);
+}
+
+.no-access {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #dc3545;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 2rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 0.5rem;
+}
+
+th {
+  background-color: #f3cf66;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05rem;
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 2px solid #edf2f7;
+}
+
+td {
+  padding: 1.2rem 1rem;
+  color: #333;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #edf2f7;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background-color: #fffaf0;
+}
+
+.role-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.role-badge.super {
+  background-color: #fff1cc;
+  color: #856404;
+}
+
+.role-badge.admin {
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+
+@media (max-width: 768px) {
+  .manage-admins {
+    padding: 1rem;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-btn, .delete-btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.edit-btn:disabled, .delete-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-btn:hover:not(:disabled) {
+  background-color: #0069d9;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover:not(:disabled) {
+  background-color: #c82333;
+}

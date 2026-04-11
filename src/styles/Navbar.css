@@ -1,0 +1,98 @@
+.navbar {
+  background-color: #004a99;
+  color: white;
+  padding: 5px 10px; /* Reduced padding */
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; /* Reduced gap */
+  position: relative;
+}
+
+.nav-brand {
+  font-size: 1.1rem; /* Reduced size */
+  color: white;
+  margin-bottom: 2px;
+  width: 100%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for many leagues */
+  justify-content: center;
+  gap: 8px 12px; /* Better spacing between links */
+  padding: 0;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.nav-links li {
+  min-width: fit-content;
+}
+
+.nav-links li a, .contact-nav-button {
+  color: white;
+  text-decoration: none;
+  font-size: 0.85rem; /* Increased slightly from 0.7 for readability */
+  font-weight: 600;
+  display: block;
+}
+
+.contact-nav-button {
+  background-color: transparent;
+  color: white !important;
+  padding: 0; /* Remove button-like padding */
+  border-radius: 0; /* Remove border radius */
+  font-weight: 600; /* Match other nav links */
+  transition: opacity 0.2s;
+}
+
+.contact-nav-button:hover {
+  opacity: 0.8; /* Subtle hover effect */
+}
+
+.current-users {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #003366;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  z-index: 10;
+}
+
+/* Mobile styles for smaller text */
+@media (max-width: 768px) {
+  .nav-brand {
+    font-size: 0.9rem; /* Smaller brand name for mobile */
+  }
+  
+  .nav-links li a {
+    font-size: 0.7rem; /* Smaller navigation links for mobile */
+  }
+  
+  .contact-nav-button {
+    font-size: 0.7rem; /* Smaller contact button text */
+    padding: 4px 12px; /* Slightly smaller padding */
+  }
+  
+  .current-users {
+    font-size: 0.6rem; /* Smaller current users text */
+    padding: 3px 6px; /* Smaller padding */
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-brand {
+    font-size: 1.3rem;
+  }
+}
