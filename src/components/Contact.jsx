@@ -9,7 +9,7 @@ const Contact = () => {
         <h1>Contact Us</h1>
         <p>اگر آپ بھی ایسی پروفیشنل ویب سائٹ بنوانا چاہتے ہیں تو ابھی واٹس ایپ پر رابطہ کریں۔</p>
         <div className="social-links">
-          <a href="https://wa.me/4915217492928?text=Hello%20there!" target="_blank" rel="noopener noreferrer" className="social-button whatsapp">
+          <a href="https://wa.me/923408432739?text=Hello%20there!" target="_blank" rel="noopener noreferrer" className="social-button whatsapp">
             <FaWhatsapp />
             <span>WhatsApp</span>
           </a>
