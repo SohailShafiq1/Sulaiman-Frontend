@@ -132,7 +132,7 @@ function Home() {
         <div className="announcement">
           <marquee behavior="scroll" direction="right">
             {newsList.map(news => (
-              <span key={news._id} style={{ marginLeft: '100px' }}>
+              <span key={news._id} style={{ marginLeft: '100px', color: '#000' }}>
                 {news.title}: {news.content}
               </span>
             ))}
@@ -250,7 +250,7 @@ function TournamentView() {
             {tournament.headline || ` -  کوٹلہ کمیٹی کی جانب سے تمام کھلاڑیوں کو بیسٹ وشز`}
 
             {newsList.map(news => (
-              <span key={news._id} style={{ marginLeft: '100px' }}>
+              <span key={news._id} style={{ marginLeft: '100px', color: '#000' }}>
                 {news.title}: {news.content}
               </span>
             ))}
