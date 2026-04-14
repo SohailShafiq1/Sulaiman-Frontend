@@ -1,6 +1,6 @@
 .banner {
   width: 100%;
-  background-color: #000;
+  background-color: var(--color-text);
   overflow: hidden;
   position: relative;
   display: flex;
@@ -35,7 +35,7 @@
 }
 
 .arrow {
-  color: white;
+  color: var(--color-surface);
   font-size: 2rem; /* Reduced arrow size */
   cursor: pointer;
   pointer-events: auto;
@@ -62,7 +62,7 @@
 }
 
 .dot.active {
-  background-color: white;
+  background-color: var(--color-surface);
 }
 
 @media (max-width: 768px) {

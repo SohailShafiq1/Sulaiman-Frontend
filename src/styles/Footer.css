@@ -1,9 +1,9 @@
 .main-footer {
-  background-color: #004a99;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-surface);
   padding: 20px 10px;
   text-align: center;
-  border-top: 3px solid #d4af37;
+  border-top: 3px solid var(--color-accent);
   margin-top: 30px;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .footer-link:hover {
-  color: #25d366; /* WhatsApp green on hover */
+  color: var(--color-secondary); /* WhatsApp green on hover */
   text-decoration: underline;
 }
 

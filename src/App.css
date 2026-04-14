@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: var(--color-surface);
   font-family: Arial, sans-serif;
   overflow-x: hidden; /* Prevent horizontal scroll on whole page */
 }
@@ -22,12 +22,12 @@ body {
 }
 
 .announcement {
-  background-color: #f7fafc;
+  background-color: var(--color-bg);
   padding: 8px 0;
   font-size: 0.95rem;
   font-weight: 700;
-  color: #c9a44c;
-  border-bottom: 1px solid #eee;
+  color: var(--color-accent);
+  border-bottom: 1px solid var(--color-border);
   overflow: hidden;
 }
 
@@ -49,8 +49,8 @@ body {
 }
 
 .copy-url-button {
-  background: #2b7cff;
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-surface);
   border: none;
   padding: 6px 10px;
   border-radius: 6px;
@@ -58,7 +58,7 @@ body {
   font-weight: 600;
   transition: background 150ms ease;
 }
-.copy-url-button:hover { background: #245ec4; }
+.copy-url-button:hover { background: var(--color-primary-hover); }
 .copy-url-button:active { transform: translateY(1px); }
 
 /* Improved Copy Link Styling */
@@ -74,9 +74,9 @@ body {
   align-items: center;
   gap: 10px;
   padding: 10px 24px;
-  background-color: white;
-  color: #1a202c;
-  border: 1.5px solid #edf2f7;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: 1.5px solid var(--color-border);
   border-radius: 30px;
   font-weight: 700;
   font-size: 0.95rem;
@@ -86,8 +86,8 @@ body {
 }
 
 .main-copy-btn:hover {
-  border-color: #c9a44c;
-  color: #c9a44c;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(201, 164, 76, 0.15);
 }
@@ -102,8 +102,8 @@ body {
 }
 
 .main-copy-btn.copied {
-  background-color: #059669;
-  border-color: #059669;
-  color: white;
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-surface);
   box-shadow: 0 4px 15px rgba(5, 150, 105, 0.25);
 }

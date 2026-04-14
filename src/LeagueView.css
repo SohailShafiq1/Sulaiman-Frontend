@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: white;
+  background-color: var(--color-surface);
   min-height: 100vh;
 }
 
@@ -11,17 +11,17 @@
 }
 
 .league-tournament-section {
-  background: white;
+  background: var(--color-surface);
   margin-bottom: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
   overflow: hidden;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--color-border);
 }
 
 .league-section-banner {
-  background-color: #065e34; /* Dark green matching screenshot */
-  color: white;
+  background-color: var(--color-secondary-hover); /* Dark green matching screenshot */
+  color: var(--color-surface);
   padding: 12px;
   text-align: center;
   font-size: 1.6rem;
@@ -55,13 +55,13 @@
 }
 
 .league-copy-btn {
-  background: #f1f5f9;
-  border: 1px solid #e2e8f0;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
   padding: 4px 10px;
   border-radius: 6px;
   font-size: 0.75rem;
   font-weight: 600;
-  color: #475569;
+  color: var(--color-muted);
   display: flex;
   align-items: center;
   gap: 5px;
@@ -70,25 +70,25 @@
 }
 
 .league-copy-btn:hover {
-  background: #e2e8f0;
-  color: #2b6cb0;
+  background: var(--color-border);
+  color: var(--color-primary);
 }
 
 .league-copy-btn.copied {
-  background: #065e34;
-  color: white;
-  border-color: #065e34;
+  background: var(--color-secondary-hover);
+  color: var(--color-surface);
+  border-color: var(--color-secondary-hover);
 }
 
 .tournament-name-blue {
-  color: #2b6cb0;
+  color: var(--color-primary);
   margin: 0 0 8px 0;
   font-size: 1.4rem;
   font-weight: 600;
 }
 
 .tournament-dates-mini {
-  color: #2d3748;
+  color: var(--color-text);
   font-size: 1rem;
   font-weight: 700;
   margin: 0;
@@ -105,19 +105,19 @@
 }
 
 .league-standing-table th {
-  background-color: #f3cf66;
-  color: #ffffff;
+  background-color: var(--color-accent);
+  color: var(--color-surface);
   padding: 12px 5px;
   text-align: center;
   font-weight: 800;
   font-size: 0.9rem;
-  border-bottom: 2px solid #edf2f7;
+  border-bottom: 2px solid var(--color-border);
 }
 
 .league-standing-table td {
   padding: 10px 5px;
   vertical-align: middle;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid var(--color-bg);
   font-size: 0.9rem;
   text-align: center;
 }
@@ -133,12 +133,12 @@
 .pos-cell {
   width: 35px;
   font-weight: 500;
-  color: #4a5568;
+  color: var(--color-muted);
 }
 
 /* Winning Total Blink Effect: 2s Blue, 2s White */
 @keyframes blink-winner {
-  0%, 50% { background-color: #17a2b8; color: white; }
+  0%, 50% { background-color: var(--color-primary); color: var(--color-surface); }
   51%, 100% { background-color: transparent; color: inherit; }
 }
 
@@ -155,7 +155,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #718096;
+  background-color: var(--color-muted);
   object-fit: cover;
 }
 
@@ -163,20 +163,20 @@
   direction: rtl;
   text-align: right !important;
   font-weight: 500;
-  color: #2d3748;
+  color: var(--color-text);
   white-space: normal;
   padding-right: 15px !important;
 }
 
 .city-cell {
   width: 60px;
-  color: #2d3748;
+  color: var(--color-text);
   font-weight: 500;
 }
 
 .total-cell-bold {
   font-weight: 800;
-  color: #1a202c;
+  color: var(--color-text);
   width: 80px;
   text-align: center !important;
 }
@@ -186,13 +186,13 @@
 }
 
 .city-cell {
-  color: #2d3748;
+  color: var(--color-text);
   font-weight: 500;
 }
 
 .total-cell-bold {
   font-weight: 800;
-  color: #1a202c;
+  color: var(--color-text);
   font-size: 1.05rem;
 }
 
@@ -201,12 +201,12 @@
 }
 
 .announcement {
-  background-color: white;
+  background-color: var(--color-surface);
   padding: 10px 0;
   font-size: 1.1rem;
   font-weight: bold;
-  color: #2d3748;
-  border-bottom: 1px solid #e2e8f0;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
   direction: rtl;
   overflow: hidden;
   white-space: nowrap;
@@ -219,7 +219,7 @@
 
 /* Zebra striping - light grey to match screenshot exactly */
 .league-standing-table tbody tr:nth-child(even) {
-  background-color: #f7fafc;
+  background-color: var(--color-bg);
 }
 
 /* Responsive adjustments */

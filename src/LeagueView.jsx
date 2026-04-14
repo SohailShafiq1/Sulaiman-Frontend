@@ -119,8 +119,8 @@ const LeagueView = () => {
             ))
           ) : (
             <div className="league-tournament-section" style={{ padding: '40px', textAlign: 'center' }}>
-              <h3 style={{ color: '#2d3748', marginBottom: '10px' }}>No Active Tournaments</h3>
-              <p style={{ color: '#718096' }}>There are currently no active tournaments listed under this league. Please check back later.</p>
+              <h3 style={{ color: 'var(--color-text)', marginBottom: '10px' }}>No Active Tournaments</h3>
+              <p style={{ color: 'var(--color-muted)' }}>There are currently no active tournaments listed under this league. Please check back later.</p>
             </div>
           )}
         </div>

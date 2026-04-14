@@ -1,6 +1,6 @@
 .navbar {
-  background-color: #004a99;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-surface);
   padding: 5px 10px; /* Reduced padding */
   font-family: Arial, sans-serif;
   text-align: center;
@@ -16,7 +16,7 @@
 
 .nav-brand {
   font-size: 1.1rem; /* Reduced size */
-  color: white;
+  color: var(--color-surface);
   margin-bottom: 2px;
   width: 100%;
 }
@@ -37,7 +37,7 @@
 }
 
 .nav-links li a, .contact-nav-button {
-  color: white;
+  color: var(--color-surface);
   text-decoration: none;
   font-size: 0.85rem; /* Increased slightly from 0.7 for readability */
   font-weight: 600;
@@ -46,7 +46,7 @@
 
 .contact-nav-button {
   background-color: transparent;
-  color: white !important;
+  color: var(--color-surface) !important;
   padding: 0; /* Remove button-like padding */
   border-radius: 0; /* Remove border radius */
   font-weight: 600; /* Match other nav links */
@@ -61,8 +61,8 @@
   position: absolute;
   top: 5px;
   right: 5px;
-  background-color: #003366;
-  color: white;
+  background-color: var(--color-primary-hover);
+  color: var(--color-surface);
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 0.7rem;

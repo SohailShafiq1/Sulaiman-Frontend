@@ -62,7 +62,7 @@ const Categories = () => {
                 <tr key={t._id}>
                   <td className="owner-row-name">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                      <FaTrophy style={{ color: '#c9a44c' }} />
+                      <FaTrophy style={{ color: 'var(--color-accent)' }} />
                       {t.name}
                     </div>
                   </td>
@@ -73,7 +73,7 @@ const Categories = () => {
                   </td>
                   <td style={{ fontWeight: '600' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      <FaUsers style={{ color: '#4a5568' }} />
+                      <FaUsers style={{ color: 'var(--color-muted)' }} />
                       {t.participantCount || 0} Participants
                     </div>
                   </td>

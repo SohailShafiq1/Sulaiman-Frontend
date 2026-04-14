@@ -1,4 +1,16 @@
 :root {
+  --color-primary: #60A5FA;
+  --color-secondary: #86EFAC;
+  --color-accent: #FDE68A;
+  --color-text: #1F2937;
+  --color-bg: #F0FDF4;
+  --color-surface: #ffffff;
+  --color-border: #D1D5DB;
+  --color-muted: #4B5563;
+  --color-overlay: rgba(31, 41, 55, 0.6);
+  --color-primary-hover: #3B82F6;
+  --color-secondary-hover: #4ADE80;
+  --color-accent-hover: #FCD34D;
   font-family: Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -7,11 +19,15 @@
 
 body {
   margin: 0;
-  background-color: #fff;
-  color: #333;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 a {
-  color: inherit;
+  color: var(--color-primary);
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

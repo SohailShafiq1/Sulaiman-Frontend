@@ -1545,7 +1545,7 @@ const Tournaments = () => {
                     <div key={league._id} className="manage-league-card">
                       <div className="manage-league-info">
                         <h3>{league.name}</h3>
-                        <div className="league-admin-badge" style={{ fontSize: '0.8rem', color: '#065e34', marginBottom: '8px', fontWeight: 'bold' }}>
+                        <div className="league-admin-badge" style={{ fontSize: '0.8rem', color: 'var(--color-secondary-hover)', marginBottom: '8px', fontWeight: 'bold' }}>
                           <FaUserShield /> Admin: {league.admin?.name || 'Super Admin Only'}
                         </div>
                         <p>{league.description || "No description"}</p>
